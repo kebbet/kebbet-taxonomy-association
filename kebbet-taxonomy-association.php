@@ -3,7 +3,7 @@
  * Plugin Name:       Kebbet plugins - custom taxonomy: association
  * Plugin URI:        https://github.com/kebbet/kebbet-taxonomy-association
  * Description:       Register the custom taxonomy association
- * Version:           20210605.01
+ * Version:           20210627.01
  * Author:            Erik Betshammar
  * Author URI:        https://verkan.se
  * Requires at least: 5.7
