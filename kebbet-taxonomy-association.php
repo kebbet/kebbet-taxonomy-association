@@ -3,7 +3,7 @@
  * Plugin Name:       Kebbet plugins - custom taxonomy: association
  * Plugin URI:        https://github.com/kebbet/kebbet-taxonomy-association
  * Description:       Register the custom taxonomy association
- * Version:           20210627.01
+ * Version:           20210806.01
  * Author:            Erik Betshammar
  * Author URI:        https://verkan.se
  * Requires at least: 5.7
@@ -16,7 +16,7 @@
 namespace kebbet\taxonomy\association;
 
 const TAXONOMY   = 'association';
-const POST_TYPES = array( 'post', 'event-archive' );
+const POST_TYPES = array( 'post', 'event-archive', 'explore' );
 const HIDE_SLUG  = false;
 
 /**
@@ -75,10 +75,10 @@ function register() {
 	);
 
 	$capabilities = array(
-		'manage_terms' => 'manage_categories', // Previous 'manage_options'.
-		'edit_terms'   => 'manage_categories', // Previous 'manage_options'.
+		'manage_terms' => 'publish_posts', // Previous 'manage_options'.
+		'edit_terms'   => 'publish_posts', // Previous 'manage_options'.
 		'delete_terms' => 'manage_categories', // Previous 'manage_options'.
-		'assign_terms' => 'manage_categories',
+		'assign_terms' => 'publish_posts',
 	);
 
 	$tax_args = array(
